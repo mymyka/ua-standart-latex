@@ -1,0 +1,35 @@
+\documentclass{style/assignment/assignment}
+
+% set course name
+\newcommand{\coursename}{Комп'ютерні науки}
+
+% set the group number
+% leave blank if individual assignment
+\newcommand{\groupnr}{КС31}
+
+% set the assignment number
+% leave blank if single assignment
+\newcommand{\assnr}{2}
+
+% set the number of parameters you give to each authors
+\newcommand{\nrauthorparams}{3}
+
+% set the parameters of each author A
+\readlist*\authors{
+Касьяненко М.М & Варіант 9 & kasianenko2020ks15@student.karazin.ua
+}
+
+\begin{document}
+    \input{content/assignment/title-page}
+    
+    
+    \ifthenelse{\equal{\assnr}{}}{
+        \input{content/assignment/assignment}
+    }{
+        \input{content/assignment/assignment}
+    }
+    
+    % uncomment next line if using references
+    \printbibliography[title={Посилання}]
+
+\end{document}
