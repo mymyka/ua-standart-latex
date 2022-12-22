@@ -65,3 +65,38 @@
 \geometry{right=1.5cm}
 \geometry{top=2cm}
 \geometry{bottom=2cm}
+
+
+
+
+
+
+
+
+
+% Set up multicolumn
+\RequirePackage{multicol}
+\setlength\columnsep{30pt}
+
+% Set up multirow
+\RequirePackage{multirow}
+
+
+
+
+
+
+
+
+
+
+
+% Set up page numbering
+\RequirePackage{fancyhdr}
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyhead[R]{\small \thepage} 
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+}
+\pagestyle{plain}
